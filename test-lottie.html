@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lottie Test</title>
+</head>
+<body>
+    <h1>Testing Lottie Animation</h1>
+    
+    <!-- Test 1: Direct path -->
+    <h2>Test 1: Direct Path</h2>
+    <lottie-player 
+        src="./Eating Fast food.json" 
+        background="transparent" 
+        speed="1" 
+        style="width: 300px; height: 300px; border: 2px solid red;" 
+        loop 
+        autoplay>
+    </lottie-player>
+
+    <!-- Test 2: URL encoded -->
+    <h2>Test 2: URL Encoded</h2>
+    <lottie-player 
+        src="./Eating%20Fast%20food.json" 
+        background="transparent" 
+        speed="1" 
+        style="width: 300px; height: 300px; border: 2px solid blue;" 
+        loop 
+        autoplay>
+    </lottie-player>
+
+    <!-- Test 3: Online fallback -->
+    <h2>Test 3: Online Animation (Fallback)</h2>
+    <lottie-player 
+        src="https://assets2.lottiefiles.com/packages/lf20_kyu7xb1v.json" 
+        background="transparent" 
+        speed="1" 
+        style="width: 300px; height: 300px; border: 2px solid green;" 
+        loop 
+        autoplay>
+    </lottie-player>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>

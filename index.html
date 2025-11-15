@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chandan Ka Dhaba - Experience authentic food, warm hospitality, and comfortable rooms. Where comfort meets flavor!">
+    <meta name="keywords" content="dhaba, restaurant, food, rooms, hospitality, Indian cuisine">
+    <meta name="author" content="Chandan Kumar, Krish Garg, Yashoda Thapa">
+    <meta name="theme-color" content="#6F4E37">
+    <title>Chandan Ka Dhaba - Where Comfort Meets Flavor</title>
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-utensils"></i> Chandan Ka Dhaba
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="https://wa.me/919876543210?text=Hi! I want to order food" class="btn btn-order ms-3">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="hero-title">Where Comfort Meets Flavor</h1>
+                    <p class="hero-subtitle">Taste That Feels Like Home</p>
+                    <p class="hero-description">Experience the perfect blend of traditional dhaba warmth and modern café vibes. We serve authentic flavors with genuine hospitality.</p>
+                    <div class="hero-buttons">
+                        <a href="menu.html" class="btn btn-primary btn-lg me-3">
+                            <i class="fas fa-book-open"></i> View Menu
+                        </a>
+                        <a href="rooms.html" class="btn btn-outline-light btn-lg">
+                            <i class="fas fa-bed"></i> Book a Room
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-slideshow">
+                        <div class="hero-slide active">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=600&fit=crop" 
+                                 alt="Delicious Food" 
+                                 class="img-fluid rounded-3 shadow-lg">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=600&h=600&fit=crop" 
+                                 alt="Indian Cuisine" 
+                                 class="img-fluid rounded-3 shadow-lg">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&h=600&fit=crop" 
+                                 alt="Butter Chicken" 
+                                 class="img-fluid rounded-3 shadow-lg">
+                        </div>
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8?w=600&h=600&fit=crop" 
+                                 alt="Paneer Tikka" 
+                                 class="img-fluid rounded-3 shadow-lg">
+                        </div>
+                        <div class="slideshow-dots">
+                            <span class="dot active" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                            <span class="dot" onclick="currentSlide(4)"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <section class="features-section py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Authentic Flavors</h3>
+                        <p>Traditional recipes prepared with love and fresh ingredients</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>Comfortable Rooms</h3>
+                        <p>Clean, cozy accommodation with modern amenities</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Warm Hospitality</h3>
+                        <p>Customer-first service that makes you feel at home</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-dishes py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Featured Dishes</h2>
+                <p class="section-subtitle">Taste the best of what we offer</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="dish-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=500&h=400&fit=crop" alt="Butter Chicken">
+                            <div class="dish-overlay">
+                                <a href="menu.html" class="btn btn-light">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="dish-content">
+                            <h4>Butter Chicken</h4>
+                            <p>Creamy, rich, and absolutely delicious</p>
+                            <div class="dish-footer">
+                                <span class="price">₹299</span>
+                                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="dish-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1589302168068-964664d93dc0?w=500&h=400&fit=crop" alt="Dal Makhani">
+                            <div class="dish-overlay">
+                                <a href="menu.html" class="btn btn-light">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="dish-content">
+                            <h4>Dal Makhani</h4>
+                            <p>Slow-cooked black lentils with butter</p>
+                            <div class="dish-footer">
+                                <span class="price">₹199</span>
+                                <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="dish-card">
+                        <div class="dish-image">
+                            <img src="https://images.unsplash.com/photo-1601050690597-df0568f70950?w=500&h=400&fit=crop" alt="Paneer Tikka">
+                            <div class="dish-overlay">
+                                <a href="menu.html" class="btn btn-light">Order Now</a>
+                            </div>
+                        </div>
+                        <div class="dish-content">
+                            <h4>Paneer Tikka</h4>
+                            <p>Grilled cottage cheese marinated in spices</p>
+                            <div class="dish-footer">
+                                <span class="price">₹249</span>
+                                <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="offers-section">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">🎉 Explore Offers</h2>
+                <p class="section-subtitle">Amazing deals just for you!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="offer-card">
+                        <span class="offer-badge">Limited Time</span>
+                        <div class="offer-icon">
+                            <i class="fas fa-percent"></i>
+                        </div>
+                        <h3 class="offer-title">First Order Special</h3>
+                        <div class="offer-discount">
+                            20<span>% OFF</span>
+                        </div>
+                        <p class="offer-description">Get 20% off on your first order above ₹500. Valid for new customers only!</p>
+                        <div class="offer-code">FIRST20</div>
+                        <p class="offer-validity">Valid till December 31, 2025</p>
+                        <a href="menu.html" class="btn btn-primary">Order Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="offer-card">
+                        <span class="offer-badge">Best Value</span>
+                        <div class="offer-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="offer-title">Family Feast Deal</h3>
+                        <div class="offer-discount">
+                            ₹999<span> ONLY</span>
+                        </div>
+                        <p class="offer-description">Complete family meal for 4 people including starters, mains, breads, and dessert!</p>
+                        <div class="offer-code">FAMILY999</div>
+                        <p class="offer-validity">Available all days</p>
+                        <a href="menu.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="offer-card">
+                        <span class="offer-badge">Weekend Special</span>
+                        <div class="offer-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3 class="offer-title">Free Dessert</h3>
+                        <div class="offer-discount">
+                            FREE<span> 🍰</span>
+                        </div>
+                        <p class="offer-description">Get a complimentary dessert with any order above ₹800 on weekends (Sat-Sun)</p>
+                        <div class="offer-code">WEEKEND</div>
+                        <p class="offer-validity">Valid on Saturdays & Sundays</p>
+                        <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-ways">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title" style="color: white;">Get In Touch</h2>
+                <p class="section-subtitle" style="color: rgba(255,255,255,0.9);">We're just a call, message, or visit away!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="contact-way-card">
+                        <div class="contact-way-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h4 class="contact-way-title">WhatsApp Us</h4>
+                        <p class="contact-way-info">Quick orders & instant replies</p>
+                        <a href="https://wa.me/919876543210?text=Hi! I want to order food" class="contact-way-btn" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Chat Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="contact-way-card">
+                        <div class="contact-way-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4 class="contact-way-title">Call Us</h4>
+                        <p class="contact-way-info">+91 98765 43210</p>
+                        <a href="tel:+919876543210" class="contact-way-btn">
+                            <i class="fas fa-phone"></i> Call Now
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="contact-way-card">
+                        <div class="contact-way-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4 class="contact-way-title">Visit Us</h4>
+                        <p class="contact-way-info">123 Highway Road, Delhi</p>
+                        <a href="contact.html" class="contact-way-btn">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up">
+                <div class="status-badge open">
+                    <span class="status-dot"></span>
+                    <span>Open 24/7 - Always here for you!</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">What Our Customers Say</h2>
+                <p class="section-subtitle">Real reviews from real people</p>
+            </div>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Amazing food and cozy ambience! The butter chicken here tastes just like home. The rooms are clean and comfortable too. Highly recommended!"</p>
+                            <div class="testimonial-author">
+                                <h5>Rahul Sharma</h5>
+                                <span>Delhi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Perfect place for a quick bite during our road trip. The staff is super friendly and the food is absolutely delicious. Will definitely come back!"</p>
+                            <div class="testimonial-author">
+                                <h5>Priya Singh</h5>
+                                <span>Mumbai</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimonial-card">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <p class="testimonial-text">"Great dhaba experience with modern facilities. The thali is value for money and the rooms are perfect for travelers. Loved the hospitality!"</p>
+                            <div class="testimonial-author">
+                                <h5>Amit Patel</h5>
+                                <span>Bangalore</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section py-5">
+        <div class="container text-center">
+            <div data-aos="zoom-in">
+                <h2 class="cta-title">Ready to Experience the Best?</h2>
+                <p class="cta-subtitle">Visit us today or order online for home delivery</p>
+                <div class="cta-buttons">
+                    <a href="https://wa.me/919876543210?text=Hi! I want to order food" class="btn btn-whatsapp btn-lg me-3">
+                        <i class="fab fa-whatsapp"></i> Order on WhatsApp
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">
+                        <i class="fas fa-map-marker-alt"></i> Get Directions
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nearby Places Section -->
+    <section class="nearby-places py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Explore Nearby</h2>
+                <p class="section-subtitle">Discover popular attractions and places around us</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="nearby-filters text-center mb-5" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-map"></i> All Places
+                </button>
+                <button class="filter-btn" data-filter="tourist">
+                    <i class="fas fa-monument"></i> Tourist Spots
+                </button>
+                <button class="filter-btn" data-filter="hospital">
+                    <i class="fas fa-hospital"></i> Hospitals
+                </button>
+                <button class="filter-btn" data-filter="shopping">
+                    <i class="fas fa-shopping-bag"></i> Shopping
+                </button>
+                <button class="filter-btn" data-filter="transport">
+                    <i class="fas fa-bus"></i> Transport
+                </button>
+            </div>
+
+            <div class="row g-4" id="nearbyPlacesGrid">
+                <!-- Tourist Spots -->
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="tourist" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon">
+                            <i class="fas fa-gopuram"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>India Gate</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 2.5 km away</p>
+                            <p class="nearby-description">Historic war memorial and iconic monument</p>
+                            <div class="nearby-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.5/5</span>
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=India+Gate+Delhi" target="_blank" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="tourist" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon">
+                            <i class="fas fa-mosque"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>Red Fort</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 5.0 km away</p>
+                            <p class="nearby-description">UNESCO World Heritage Site, historic fort</p>
+                            <div class="nearby-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>5.0/5</span>
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Red+Fort+Delhi" target="_blank" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="tourist" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon">
+                            <i class="fas fa-archway"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>Qutub Minar</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 8.2 km away</p>
+                            <p class="nearby-description">Tallest brick minaret in the world</p>
+                            <div class="nearby-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.6/5</span>
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Qutub+Minar+Delhi" target="_blank" class="btn btn-sm btn-outline-primary">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hospitals -->
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="hospital" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon hospital-icon">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>AIIMS Delhi</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 3.8 km away</p>
+                            <p class="nearby-description">Multi-specialty government hospital</p>
+                            <div class="nearby-timing">
+                                <i class="fas fa-clock"></i> Open 24/7
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=AIIMS+Delhi" target="_blank" class="btn btn-sm btn-outline-danger">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="hospital" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon hospital-icon">
+                            <i class="fas fa-plus-square"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>Max Hospital</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 2.1 km away</p>
+                            <p class="nearby-description">Premium private hospital</p>
+                            <div class="nearby-timing">
+                                <i class="fas fa-clock"></i> Open 24/7
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Max+Hospital+Delhi" target="_blank" class="btn btn-sm btn-outline-danger">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shopping -->
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="shopping" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon shopping-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>Select Citywalk Mall</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 4.5 km away</p>
+                            <p class="nearby-description">Premium shopping and dining destination</p>
+                            <div class="nearby-timing">
+                                <i class="fas fa-clock"></i> 10 AM - 10 PM
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Select+Citywalk+Delhi" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="shopping" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon shopping-icon">
+                            <i class="fas fa-store"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>Connaught Place</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 3.2 km away</p>
+                            <p class="nearby-description">Central shopping and business district</p>
+                            <div class="nearby-timing">
+                                <i class="fas fa-clock"></i> 10 AM - 9 PM
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Connaught+Place+Delhi" target="_blank" class="btn btn-sm btn-outline-success">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transport -->
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="transport" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon transport-icon">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>New Delhi Railway Station</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 4.8 km away</p>
+                            <p class="nearby-description">Major railway junction</p>
+                            <div class="nearby-timing">
+                                <i class="fas fa-clock"></i> Open 24/7
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=New+Delhi+Railway+Station" target="_blank" class="btn btn-sm btn-outline-info">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="transport" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon transport-icon">
+                            <i class="fas fa-plane"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>IGI Airport</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 15.5 km away</p>
+                            <p class="nearby-description">Indira Gandhi International Airport</p>
+                            <div class="nearby-timing">
+                                <i class="fas fa-clock"></i> Open 24/7
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=IGI+Airport+Delhi" target="_blank" class="btn btn-sm btn-outline-info">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 nearby-item" data-category="transport" data-aos="zoom-in">
+                    <div class="nearby-card">
+                        <div class="nearby-icon transport-icon">
+                            <i class="fas fa-subway"></i>
+                        </div>
+                        <div class="nearby-content">
+                            <h4>Rajiv Chowk Metro</h4>
+                            <p class="nearby-distance"><i class="fas fa-location-arrow"></i> 1.2 km away</p>
+                            <p class="nearby-description">Central metro interchange station</p>
+                            <div class="nearby-timing">
+                                <i class="fas fa-clock"></i> 6 AM - 11 PM
+                            </div>
+                            <div class="nearby-actions">
+                                <a href="https://www.google.com/maps/dir/?api=1&destination=Rajiv+Chowk+Metro+Station" target="_blank" class="btn btn-sm btn-outline-info">
+                                    <i class="fas fa-directions"></i> Get Directions
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Map Button -->
+            <div class="text-center mt-5" data-aos="fade-up">
+                <button class="btn btn-primary btn-lg" onclick="window.open('https://www.google.com/maps/@28.6139,77.2090,14z', '_blank')">
+                    <i class="fas fa-map-marked-alt"></i> View Full Interactive Map
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title">Chandan Ka Dhaba</h4>
+                    <p>Where comfort meets flavor. Experience authentic food and warm hospitality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Contact Info</h5>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Highway Road, Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@chandankadhaba.com</li>
+                        <li><i class="fas fa-clock"></i> Open 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright">&copy; 2025 Chandan Ka Dhaba. All rights reserved. Designed by Chandan, Krish & Yashoda.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+    
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/advanced-features.js"></script>
+</body>
+</html>

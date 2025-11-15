@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book comfortable rooms at Chandan Ka Dhaba - Affordable, clean, and cozy accommodation for travelers.">
+    <meta name="keywords" content="rooms, accommodation, lodging, hotel, stay">
+    <meta name="theme-color" content="#6F4E37">
+    <title>Rooms - Chandan Ka Dhaba</title>
+    
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="fas fa-utensils"></i> Chandan Ka Dhaba
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <a href="https://wa.me/919876543210?text=Hi! I want to order food" class="btn btn-order ms-3">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Our Rooms</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Comfortable stay for travelers</p>
+        </div>
+    </section>
+
+    <section class="rooms-section py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Choose Your Room</h2>
+                <p class="section-subtitle">Clean, comfortable, and affordable accommodation</p>
+            </div>
+
+            <div class="row room-card-row mb-5" data-aos="fade-up">
+                <div class="col-lg-5">
+                    <div class="room-image-container">
+                        <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&h=400&fit=crop" alt="Standard Room" class="room-image">
+                        <span class="room-badge">Standard</span>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="room-details">
+                        <h3 class="room-title">Standard Room</h3>
+                        <div class="room-price-section">
+                            <div>
+                                <span class="room-price">₹999</span>
+                                <span class="room-price-label">/ night (Non-AC)</span>
+                            </div>
+                            <div class="mt-2">
+                                <span class="room-price">₹1299</span>
+                                <span class="room-price-label">/ night (AC)</span>
+                            </div>
+                        </div>
+                        <p class="room-description">Perfect for budget travelers. Clean and comfortable rooms with all basic amenities.</p>
+                        <div class="room-amenities">
+                            <h5>Room Features:</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="amenity-list">
+                                        <li><i class="fas fa-check"></i> Free WiFi</li>
+                                        <li><i class="fas fa-check"></i> Attached Washroom</li>
+                                        <li><i class="fas fa-check"></i> Hot Water</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="amenity-list">
+                                        <li><i class="fas fa-check"></i> TV</li>
+                                        <li><i class="fas fa-check"></i> 24×7 Service</li>
+                                        <li><i class="fas fa-check"></i> Clean Linen</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room="Standard">
+                            <i class="fas fa-calendar-check"></i> Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row room-card-row mb-5 flex-row-reverse" data-aos="fade-up">
+                <div class="col-lg-5">
+                    <div class="room-image-container">
+                        <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?w=600&h=400&fit=crop" alt="Deluxe Room" class="room-image">
+                        <span class="room-badge">Deluxe</span>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="room-details">
+                        <h3 class="room-title">Deluxe Room</h3>
+                        <div class="room-price-section">
+                            <div>
+                                <span class="room-price">₹1499</span>
+                                <span class="room-price-label">/ night (Non-AC)</span>
+                            </div>
+                            <div class="mt-2">
+                                <span class="room-price">₹1799</span>
+                                <span class="room-price-label">/ night (AC)</span>
+                            </div>
+                        </div>
+                        <p class="room-description">Enhanced comfort with spacious interiors and premium amenities.</p>
+                        <div class="room-amenities">
+                            <h5>Room Features:</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="amenity-list">
+                                        <li><i class="fas fa-check"></i> Free WiFi</li>
+                                        <li><i class="fas fa-check"></i> Attached Washroom</li>
+                                        <li><i class="fas fa-check"></i> Hot Water</li>
+                                        <li><i class="fas fa-check"></i> Smart TV</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="amenity-list">
+                                        <li><i class="fas fa-check"></i> Room Service</li>
+                                        <li><i class="fas fa-check"></i> 24×7 Support</li>
+                                        <li><i class="fas fa-check"></i> Premium Linen</li>
+                                        <li><i class="fas fa-check"></i> Mini Fridge</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room="Deluxe">
+                            <i class="fas fa-calendar-check"></i> Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row room-card-row mb-5" data-aos="fade-up">
+                <div class="col-lg-5">
+                    <div class="room-image-container">
+                        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&h=400&fit=crop" alt="Premium Room" class="room-image">
+                        <span class="room-badge badge-premium">Premium</span>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="room-details">
+                        <h3 class="room-title">Premium Room <span class="text-warning"><i class="fas fa-star"></i></span></h3>
+                        <div class="room-price-section">
+                            <div>
+                                <span class="room-price">₹1999</span>
+                                <span class="room-price-label">/ night (AC Only)</span>
+                            </div>
+                        </div>
+                        <p class="room-description">Luxury experience with the best amenities. Perfect for family stays or long trips.</p>
+                        <div class="room-amenities">
+                            <h5>Room Features:</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <ul class="amenity-list">
+                                        <li><i class="fas fa-check"></i> High-Speed WiFi</li>
+                                        <li><i class="fas fa-check"></i> Luxury Bathroom</li>
+                                        <li><i class="fas fa-check"></i> Hot & Cold Water</li>
+                                        <li><i class="fas fa-check"></i> Smart TV + Netflix</li>
+                                        <li><i class="fas fa-check"></i> King Size Bed</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul class="amenity-list">
+                                        <li><i class="fas fa-check"></i> Room Service</li>
+                                        <li><i class="fas fa-check"></i> 24×7 Premium Support</li>
+                                        <li><i class="fas fa-check"></i> Luxury Linen</li>
+                                        <li><i class="fas fa-check"></i> Mini Fridge</li>
+                                        <li><i class="fas fa-check"></i> Complimentary Breakfast</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary btn-book" data-bs-toggle="modal" data-bs-target="#bookingModal" data-room="Premium">
+                            <i class="fas fa-calendar-check"></i> Book Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="amenities-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Hotel Amenities</h2>
+                <p class="section-subtitle">Everything you need for a comfortable stay</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h5>Free WiFi</h5>
+                        <p>High-speed internet in all rooms</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <h5>Room Service</h5>
+                        <p>24/7 food delivery to rooms</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <h5>Free Parking</h5>
+                        <p>Secure parking for all vehicles</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h5>Security</h5>
+                        <p>24×7 CCTV surveillance</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <i class="fas fa-burn"></i>
+                        </div>
+                        <h5>Hot Water</h5>
+                        <p>24-hour hot water supply</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h5>24×7 Support</h5>
+                        <p>Always available to help</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h5>Restaurant</h5>
+                        <p>In-house dining available</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="amenity-card">
+                        <div class="amenity-icon">
+                            <i class="fas fa-broom"></i>
+                        </div>
+                        <h5>Clean Washrooms</h5>
+                        <p>Hygienic attached bathrooms</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">
+                        <i class="fas fa-bed"></i> Book Your Room
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="bookingForm">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="guestName" class="form-label">Full Name *</label>
+                                <input type="text" class="form-control" id="guestName" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="guestPhone" class="form-label">Phone Number *</label>
+                                <input type="tel" class="form-control" id="guestPhone" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="checkIn" class="form-label">Check-in Date *</label>
+                                <input type="date" class="form-control" id="checkIn" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="checkOut" class="form-label">Check-out Date *</label>
+                                <input type="date" class="form-control" id="checkOut" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label for="roomType" class="form-label">Room Type *</label>
+                                <select class="form-select" id="roomType" required>
+                                    <option value="">Select Room Type</option>
+                                    <option value="Standard (Non-AC) - ₹999">Standard (Non-AC) - ₹999</option>
+                                    <option value="Standard (AC) - ₹1299">Standard (AC) - ₹1299</option>
+                                    <option value="Deluxe (Non-AC) - ₹1499">Deluxe (Non-AC) - ₹1499</option>
+                                    <option value="Deluxe (AC) - ₹1799">Deluxe (AC) - ₹1799</option>
+                                    <option value="Premium (AC) - ₹1999">Premium (AC) - ₹1999</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label for="guests" class="form-label">Number of Guests *</label>
+                                <select class="form-select" id="guests" required>
+                                    <option value="">Select Guests</option>
+                                    <option value="1">1 Guest</option>
+                                    <option value="2">2 Guests</option>
+                                    <option value="3">3 Guests</option>
+                                    <option value="4">4 Guests</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="specialRequests" class="form-label">Special Requests (Optional)</label>
+                            <textarea class="form-control" id="specialRequests" rows="3" placeholder="Any special requirements?"></textarea>
+                        </div>
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i> Your booking request will be confirmed via WhatsApp or phone call.
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="submitBooking()">
+                        <i class="fab fa-whatsapp"></i> Confirm via WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center">
+                <div class="modal-body py-5">
+                    <div class="success-icon mb-4">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Booking Request Sent!</h3>
+                    <p>Thank you for choosing Chandan Ka Dhaba. Our team will contact you shortly to confirm your booking.</p>
+                    <button type="button" class="btn btn-primary mt-3" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h4 class="footer-title">Chandan Ka Dhaba</h4>
+                    <p>Where comfort meets flavor. Experience authentic food and warm hospitality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5 class="footer-heading">Contact Info</h5>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Highway Road, Delhi, India</li>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@chandankadhaba.com</li>
+                        <li><i class="fas fa-clock"></i> Open 24/7</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="copyright">&copy; 2025 Chandan Ka Dhaba. All rights reserved. Designed by Chandan, Krish & Yashoda.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    
+    <script src="js/main.js"></script>
+    <script src="js/booking.js"></script>
+    <script src="js/advanced-features.js"></script>
+</body>
+</html>

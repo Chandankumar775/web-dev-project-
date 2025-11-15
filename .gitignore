@@ -1,0 +1,7 @@
+# Ignore history and cache files
+.history/
+.DS_Store
+Thumbs.db
+*.log
+
+# Keep all other files for deployment
